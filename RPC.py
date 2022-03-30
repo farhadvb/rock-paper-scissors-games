@@ -9,13 +9,13 @@ import os
 cap = cv2.VideoCapture(1)
 cap.set(3, 640)
 cap.set(4, 480)
-cap.set(10, 20)
+cap.set(10, 200)
 
 detector = HandDetector(detectionCon=0.8, maxHands=1)
 
 os.chdir(os.getcwd())
 
-path=f"rock-paper-scissors-games/rock-paper-scissors.jpg"
+path="rock-paper-scissors.jpg"
 
 
 def computer_chos():
